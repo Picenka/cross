@@ -9,9 +9,9 @@ from kivy.uix.label import Label
 from random import randint
 from coordinate import coordinate
 
-Config.set("graphics", "resizable", "0")
-Config.set("graphics", "width", "1000")
-Config.set("graphics", "height", "1000")
+Config.set('graphics', 'resizable', '0')
+Config.set('graphics', "width', '1000')
+Config.set('graphics', "height', '1000')
 
 
 class MainApp(App):
@@ -70,7 +70,7 @@ class MainApp(App):
     def restart(self, arg):
         self.switch = True
         for button in self.buttons:
-            button.text = ""
+            button.text = ''
             button.disabled = False
     # создание игрового поля
     def build(self):
@@ -94,9 +94,9 @@ class MainApp(App):
         # перезапуск игры
         root.add_widget(
             Button(
-                text="RESTART",
+                text='RESTART',
                 size_hint=[1, .1],
-                background_color="red",
+                background_color='red',
                 font_size=32,
                 on_press=self.restart
             )
