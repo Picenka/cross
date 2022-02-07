@@ -10,8 +10,8 @@ from random import randint
 from coordinate import coordinate
 
 Config.set('graphics', 'resizable', '0')
-Config.set('graphics', "width', '1000')
-Config.set('graphics', "height', '1000')
+Config.set('graphics', 'width', '1000')
+Config.set('graphics', 'height', '1000')
 
 
 class MainApp(App):
@@ -74,7 +74,7 @@ class MainApp(App):
             button.disabled = False
     # создание игрового поля
     def build(self):
-        self.title = "Крестики-нолики"
+        self.title = 'Крестики-нолики'
         root = BoxLayout(orientation="vertical", padding=5)
         grid = GridLayout(cols=10)
         self.buttons = []
