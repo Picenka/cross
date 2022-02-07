@@ -15,7 +15,7 @@ Config.set("graphics", "height", "1000")
 
 
 class MainApp(App):
-    print(coordinate)
+    # print(coordinate)
     def __init__(self):
         super().__init__()
         self.switch = True
@@ -48,7 +48,7 @@ class MainApp(App):
         vector = lambda item: [self.buttons[x].text for x in item]
         # проверка на концовку игры
         for item in coordinate:
-            print(vector(item))
+            # print(vector(item))
             losing_combination_X = ('X', 'X', 'X', 'X', 'X')
             losing_combination_O = ('O', 'O', 'O', 'O', 'O')
             if str(losing_combination_X).strip('()') in str(vector(item)).strip('[]'):
