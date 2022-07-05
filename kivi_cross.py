@@ -24,11 +24,12 @@ class MainApp(App):
         popup = ModalView(size_hint=(0.75, 0.5))
         victory_label = Label(text=str_win, font_size=50)
         popup.add_widget(victory_label)
-        if win:
-            sound = SoundLoader.load('win.wav')
-        else:
-            sound = SoundLoader.load('LOST.mp3')
-        popup.open(sound.play())
+        # if win:
+        #     sound = SoundLoader.load('win.wav')
+        # else:
+        #     sound = SoundLoader.load('LOST.mp3')
+        # popup.open(sound.play())
+        popup.open()
 
     def tic_tac_toe(self, arg):
         sound = SoundLoader.load('beep-08b.wav')
